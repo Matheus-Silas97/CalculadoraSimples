@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculadora Simples</string>
+    <string name="number1">Digite o primeiro valor</string>
+    <string name="number2">Digite o segundo valor</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="divided">/</string>
+    <string name="multiplied">*</string>
+    <string name="porcent">%</string>
+    <string name="result"></string>
+    <string name="clean">C</string>
+</resources>
