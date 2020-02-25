@@ -13,9 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     int num1, num2, result;
 
-    String result2;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,67 +22,58 @@ public class MainActivity extends AppCompatActivity {
         txtNum2 = findViewById(R.id.txtNum2);
         txtResult = findViewById(R.id.txtResult);
 
-
     }
 
     public void Percentage(View view) {
-        String number1 = txtNum1.getText().toString();
-        String number2 = txtNum1.getText().toString();
 
-        num1 = Integer.valueOf(number1);
-        num2 = Integer.valueOf(number2);
+        num1 = Integer.valueOf(txtNum1.getText().toString());
+        num2 = Integer.valueOf(txtNum2.getText().toString());
 
         result = num1 * num2 / 100;
         txtResult.setText(String.valueOf(result));
     }
 
     public void Multiplication(View view) {
-        String number1 = txtNum1.getText().toString();
-        String number2 = txtNum1.getText().toString();
 
-        num1 = Integer.valueOf(number1);
-        num2 = Integer.valueOf(number2);
+        num1 = Integer.valueOf(txtNum1.getText().toString());
+        num2 = Integer.valueOf(txtNum2.getText().toString());
 
         result = num1 * num2;
         txtResult.setText(String.valueOf(result));
     }
 
     public void Division(View view) {
-        String number1 = txtNum1.getText().toString();
-        String number2 = txtNum1.getText().toString();
 
-        num1 = Integer.valueOf(number1);
-        num2 = Integer.valueOf(number2);
+        num1 = Integer.valueOf(txtNum1.getText().toString());
+        num2 = Integer.valueOf(txtNum2.getText().toString());
 
         result = num1 / num2;
         txtResult.setText(String.valueOf(result));
     }
 
     public void Plus(View view) {
-        String number1 = txtNum1.getText().toString();
-        String number2 = txtNum1.getText().toString();
 
-        num1 = Integer.valueOf(number1);
-        num2 = Integer.valueOf(number2);
+        num1 = Integer.valueOf(txtNum1.getText().toString());
+        num2 = Integer.valueOf(txtNum2.getText().toString());
 
         result = num1 + num2;
         txtResult.setText(String.valueOf(result));
     }
 
     public void Minus(View view) {
-        String number1 = txtNum1.getText().toString();
-        String number2 = txtNum1.getText().toString();
 
-        num1 = Integer.valueOf(number1);
-        num2 = Integer.valueOf(number2);
+        num1 = Integer.valueOf(txtNum1.getText().toString());
+        num2 = Integer.valueOf(txtNum2.getText().toString());
 
         result = num1 - num2;
         txtResult.setText(String.valueOf(result));
     }
 
     public void Clean(View view) {
+
         txtResult.setText("");
         txtNum1.setText("");
         txtNum2.setText("");
+
     }
 }
