@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,48 +26,80 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Percentage(View view) {
+        if (txtNum1.getText().toString().equals("") || txtNum2.getText().toString().equals("") || txtNum1 == null || txtNum2 == null) {
+            txtResult.setText("");
+            Toast.makeText(getApplicationContext(), "Preencha os valores", Toast.LENGTH_SHORT).show();
+        } else {
 
-        num1 = Integer.valueOf(txtNum1.getText().toString());
-        num2 = Integer.valueOf(txtNum2.getText().toString());
 
-        result = num1 * num2 / 100;
-        txtResult.setText(String.valueOf(result));
+            num1 = Integer.valueOf(txtNum1.getText().toString());
+            num2 = Integer.valueOf(txtNum2.getText().toString());
+
+            result = num1 * num2 / 100;
+            txtResult.setText(String.valueOf(result));
+        }
     }
 
     public void Multiplication(View view) {
 
-        num1 = Integer.valueOf(txtNum1.getText().toString());
-        num2 = Integer.valueOf(txtNum2.getText().toString());
+        if (txtNum1.getText().toString().equals("") || txtNum2.getText().toString().equals("") || txtNum1 == null || txtNum2 == null) {
+            txtResult.setText("");
+            Toast.makeText(getApplicationContext(), "Preencha os valores", Toast.LENGTH_SHORT).show();
+        } else {
 
-        result = num1 * num2;
-        txtResult.setText(String.valueOf(result));
+            num1 = Integer.valueOf(txtNum1.getText().toString());
+            num2 = Integer.valueOf(txtNum2.getText().toString());
+
+            result = num1 * num2;
+            txtResult.setText(String.valueOf(result));
+        }
+
     }
 
     public void Division(View view) {
 
-        num1 = Integer.valueOf(txtNum1.getText().toString());
-        num2 = Integer.valueOf(txtNum2.getText().toString());
+        if (txtNum1.getText().toString().equals("") || txtNum2.getText().toString().equals("") || txtNum1 == null || txtNum2 == null) {
+            txtResult.setText("");
+            Toast.makeText(getApplicationContext(), "Preencha os valores", Toast.LENGTH_SHORT).show();
+        } else {
 
-        result = num1 / num2;
-        txtResult.setText(String.valueOf(result));
+            num1 = Integer.valueOf(txtNum1.getText().toString());
+            num2 = Integer.valueOf(txtNum2.getText().toString());
+
+            result = num1 / num2;
+            txtResult.setText(String.valueOf(result));
+        }
     }
 
     public void Plus(View view) {
 
-        num1 = Integer.valueOf(txtNum1.getText().toString());
-        num2 = Integer.valueOf(txtNum2.getText().toString());
+        if (txtNum1.getText().toString().equals("") || txtNum2.getText().toString().equals("") || txtNum1 == null || txtNum2 == null) {
+            txtResult.setText("");
+            Toast.makeText(getApplicationContext(), "Preencha os valores", Toast.LENGTH_SHORT).show();
+        } else {
 
-        result = num1 + num2;
-        txtResult.setText(String.valueOf(result));
+            num1 = Integer.valueOf(txtNum1.getText().toString());
+            num2 = Integer.valueOf(txtNum2.getText().toString());
+
+            result = num1 + num2;
+            txtResult.setText(String.valueOf(result));
+        }
     }
 
     public void Minus(View view) {
 
-        num1 = Integer.valueOf(txtNum1.getText().toString());
-        num2 = Integer.valueOf(txtNum2.getText().toString());
+        if (txtNum1.getText().toString().equals("") || txtNum2.getText().toString().equals("") || txtNum1 == null || txtNum2 == null) {
+            txtResult.setText("");
+            Toast.makeText(getApplicationContext(), "Preencha os valores", Toast.LENGTH_SHORT).show();
+        } else {
 
-        result = num1 - num2;
-        txtResult.setText(String.valueOf(result));
+
+            num1 = Integer.valueOf(txtNum1.getText().toString());
+            num2 = Integer.valueOf(txtNum2.getText().toString());
+
+            result = num1 - num2;
+            txtResult.setText(String.valueOf(result));
+        }
     }
 
     public void Clean(View view) {
