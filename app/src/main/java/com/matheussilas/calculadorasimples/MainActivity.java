@@ -26,25 +26,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Percentage(View view) {
-        if (txtNum1.getText().toString().equals("") || txtNum2.getText().toString().equals("") || txtNum1 == null || txtNum2 == null) {
-            txtResult.setText("");
-            Toast.makeText(getApplicationContext(), "Preencha os valores", Toast.LENGTH_SHORT).show();
-        } else {
 
+        if (txtNum1.getText().toString().equals("") || txtNum1 == null) {
+            txtResult.setText("");
+            Toast.makeText(getApplicationContext(), "Digite o primeiro valor", Toast.LENGTH_SHORT).show();
+        } else if (txtNum2.getText().toString().equals("") || txtNum2 == null) {
+            txtResult.setText("");
+            Toast.makeText(getApplicationContext(), "Digite o segundo valor", Toast.LENGTH_SHORT).show();
+        } else {
 
             num1 = Integer.valueOf(txtNum1.getText().toString());
             num2 = Integer.valueOf(txtNum2.getText().toString());
 
             result = num1 * num2 / 100;
             txtResult.setText(String.valueOf(result));
+
         }
     }
 
     public void Multiplication(View view) {
 
-        if (txtNum1.getText().toString().equals("") || txtNum2.getText().toString().equals("") || txtNum1 == null || txtNum2 == null) {
+        if (txtNum1.getText().toString().equals("") || txtNum1 == null) {
             txtResult.setText("");
-            Toast.makeText(getApplicationContext(), "Preencha os valores", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Digite o primeiro valor", Toast.LENGTH_SHORT).show();
+        } else if (txtNum2.getText().toString().equals("") || txtNum2 == null) {
+            txtResult.setText("");
+            Toast.makeText(getApplicationContext(), "Digite o segundo valor", Toast.LENGTH_SHORT).show();
         } else {
 
             num1 = Integer.valueOf(txtNum1.getText().toString());
@@ -52,15 +59,18 @@ public class MainActivity extends AppCompatActivity {
 
             result = num1 * num2;
             txtResult.setText(String.valueOf(result));
-        }
 
+        }
     }
 
     public void Division(View view) {
 
-        if (txtNum1.getText().toString().equals("") || txtNum2.getText().toString().equals("") || txtNum1 == null || txtNum2 == null) {
+        if (txtNum1.getText().toString().equals("") || txtNum1 == null) {
             txtResult.setText("");
-            Toast.makeText(getApplicationContext(), "Preencha os valores", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Digite o primeiro valor", Toast.LENGTH_SHORT).show();
+        } else if (txtNum2.getText().toString().equals("") || txtNum2 == null) {
+            txtResult.setText("");
+            Toast.makeText(getApplicationContext(), "Digite o segundo valor", Toast.LENGTH_SHORT).show();
         } else {
 
             num1 = Integer.valueOf(txtNum1.getText().toString());
@@ -68,14 +78,17 @@ public class MainActivity extends AppCompatActivity {
 
             result = num1 / num2;
             txtResult.setText(String.valueOf(result));
+
         }
     }
 
     public void Plus(View view) {
-
-        if (txtNum1.getText().toString().equals("") || txtNum2.getText().toString().equals("") || txtNum1 == null || txtNum2 == null) {
+        if (txtNum1.getText().toString().equals("") || txtNum1 == null) {
             txtResult.setText("");
-            Toast.makeText(getApplicationContext(), "Preencha os valores", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Digite o primeiro valor", Toast.LENGTH_SHORT).show();
+        } else if (txtNum2.getText().toString().equals("") || txtNum2 == null) {
+            txtResult.setText("");
+            Toast.makeText(getApplicationContext(), "Digite o segundo valor", Toast.LENGTH_SHORT).show();
         } else {
 
             num1 = Integer.valueOf(txtNum1.getText().toString());
@@ -88,11 +101,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void Minus(View view) {
 
-        if (txtNum1.getText().toString().equals("") || txtNum2.getText().toString().equals("") || txtNum1 == null || txtNum2 == null) {
+        if (txtNum1.getText().toString().equals("") || txtNum1 == null) {
             txtResult.setText("");
-            Toast.makeText(getApplicationContext(), "Preencha os valores", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Digite o primeiro valor", Toast.LENGTH_SHORT).show();
+        } else if (txtNum2.getText().toString().equals("") || txtNum2 == null) {
+            txtResult.setText("");
+            Toast.makeText(getApplicationContext(), "Digite o segundo valor", Toast.LENGTH_SHORT).show();
         } else {
-
 
             num1 = Integer.valueOf(txtNum1.getText().toString());
             num2 = Integer.valueOf(txtNum2.getText().toString());
